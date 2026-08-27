@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student developer portfolio">
+    <title>Ryan Boone | Developer Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrapper">
+            <a class="site-title" href="#home">Ryan Boone</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div>
+                    <p class="eyebrow">Student Developer Portfolio</p>
+                    <h1>Hello, I’m <span>Ryan Boone</span>.</h1>
+                    <p class="hero-text">
+                        I have always loved solving puzzles. The harder the puzzle, the more fun it is for me. I have recently started going to Full Sail University to get a Bachelor's in Simulation Engineering and so far it has been so much fun. Programming has become one of my most favorite things to do. I love learning about programming and I can't wait to experience everything that is out there. I have experience developing object-oriented applications using C++. Strong foundation in problem-solving, debugging, Git version control, and software development practices. Seeking opportunities to continue developing technical skills through academic and personal projects.
+                    </p>
+                    <div class="button-row">
+                        <a class="button primary" href="#projects">View My Projects</a>
+                        <a class="button secondary" href="assets/RBoone_Resume.pdf" target="_blank" rel="noopener">View Résumé</a>
+                    </div>
+                </div>
+
+                <img class="profile-image" src="images/PortfolioProfilePic.jpg" alt="Placeholder profile illustration">
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container narrow">
+                <p class="section-label">About Me</p>
+                <h2>Who I Am as a Developer</h2>
+                <p>
+                    I started programming around my senior year of high school. I learned a little bit of python and fell in love with it. My whole life I have enjoyed building things and solving puzzles so programming became one of my most favorite things to do. After learning C++ at Full Sail, my passion for programming continued to grow. As my career progresses, I want to keep learning new things and build my own projects that will help companies thrive. 
+                </p>
+
+                <div class="skills-grid">
+                    <article class="info-card">
+                        <h3>Languages</h3>
+                        <p>C++, HTML, CSS</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Tools</h3>
+                        <p>Visual Studio, Git, GitHub</p>
+                    </article>
+
+                    <article class="info-card">
+                        <h3>Current Focus</h3>
+                        <p>Object-oriented programming, debugging, file i/o, and clean code</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section alternate-background">
+            <div class="container">
+                <p class="section-label">Featured Work</p>
+                <h2>Projects</h2>
+                <p class="section-intro">
+                    <!--Replace the sample information below with your own work. Add screenshots, explain what each project does, and describe your development process.-->
+                </p>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <img src="images/TitleScreen.png" alt="Placeholder screenshot for Project One">
+                        <div class="project-content">
+                            <p class="project-type">C++ Console Application</p>
+                            <h3>NotSoMARVELous</h3>
+                            <p>
+                                The project was a fighting game that allowed the user to select a hero, weapon, and armor; and the villain was randomly selected. Each character had a certain amount of health and damage. The weapons and armor added or subtracted health and damage depending on what you select. You would then fight and choose to either attack or defend until either the hero or villain died.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Character, weapon, and armor selections.</li>
+                                <li>Fight using attack and defend mechanics.</li>
+                                <li>I created a function that validates user input by capturing it as a string and using a try-catch block with std::stoi to safely convert it into an integer. If the conversion succeeds and the number falls within your specified min and max bounds, it is returned immediately; otherwise, the function catches any conversion errors, displays a helpful error message, and loops until the user enters a valid choice.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                One challenge that I faced was that the user was able to fight without ever selecting a hero, weapon, or armor. I fixed this by only allowing the user to select Fight which forces the user to have to select a hero, then a weapon, and finally an armor. Once the user selected these things, the fight method would execute. This taught me how to use switch loops in a way that forces the user to do things before executing a method. 
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/Sil3ntdr3amer/cos1-project-portfolio" target="_blank" rel="noopener">View Repository</a>
+                                <a class="text-link" href="https://youtu.be/ESN_xSGqGlg?si=8HFo6L7UAlmptt4m" target="_blank" rel="noopener">Watch Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--<article class="project-card">
+                        <img src="images/project-placeholder.svg" alt="Placeholder screenshot for Project Two">
+                        <div class="project-content">
+                            <p class="project-type">Additional Project</p>
+                            <h3>Project Two Title</h3>
+                            <p>
+                                Duplicate this card when you are ready to add more work. Replace all placeholder text, links, and images before submitting.
+                            </p>
+
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Describe one major feature.</li>
+                                <li>Describe another major feature.</li>
+                                <li>Describe a technical improvement.</li>
+                            </ul>
+
+                            <h4>What I Learned</h4>
+                            <p>
+                                Explain how this project demonstrates your growth as a developer.
+                            </p>
+
+                            <div class="project-links">
+                                <a class="text-link" href="https://github.com/USERNAME/REPOSITORY" target="_blank" rel="noopener">View Repository</a>
+                                <a class="text-link" href="https://example.com" target="_blank" rel="noopener">Watch Demo</a>
+                            </div>
+                        </div>
+                    </article>-->
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container narrow contact-section">
+                <p class="section-label">Contact</p>
+                <h2>Let’s Connect</h2>
+                <p>
+                    <!--Replace the links below with your professional profiles. Do not publish your home address, student ID, personal phone number, or other private information.-->
+                </p>
+
+                <div class="contact-links">
+                    <a class="button primary" href="https://github.com/Sil3ntdr3amer" target="_blank" rel="noopener">GitHub</a>
+                    <a class="button secondary" href="https://www.linkedin.com/in/ryan-boone-223b30426" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="button secondary" href="mailto:ryansloanboone@gmail.com">Professional Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Ryan Boone. Built with HTML, CSS, GitHub, and GitHub Pages.</p>
+        </div>
+    </footer>
+</body>
+</html>
